@@ -1,0 +1,199 @@
+/* Universal styling, border-box keeps child contailers within confines of parent containers, use content-box to exceed confines */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 12px;    
+}
+
+/* landing page features at least three colours, beige background using alpha, orange header, grey footer and more */
+body {
+    background-color: rgba(245, 245, 220, 0.3);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: white;
+    height: 60px;
+    padding: 20px;
+    border-bottom: 0.2em solid black;
+}
+
+/* features at least three heading elements */
+header h1 {
+    display: inline-block;
+    font-size: 2.5em;
+    color: rgb(211, 106, 0);
+}
+
+/*header is fixed to the top, with three links */
+header nav {
+    position: relative;
+    top: -10px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 .5em;
+    left: -20px;
+}
+
+.social {
+    float: right;
+    position: relative;
+    top:-60px;
+}
+
+/* section hero */
+figure {
+    height: 500px;
+    width: 100%;
+}
+
+#hero-img {
+    width: 100%;
+    height: 500px;
+/*   
+This is what I would use if I applied using
+    background-img: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+
+/* use this for <img> html to keep ratio, and stay within container */
+    object-fit: cover;
+}
+
+figure h2{
+    color: white;
+    font-size: 6em;
+    text-align: center;
+    margin-top: -250px;    
+}
+
+
+
+/* used serif font family */
+figcaption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    width: 30em;
+    margin: 40px auto;
+    text-align: center;
+    line-height: 1.25em;
+}
+
+/*form */
+.form {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: auto;
+    width: 100%;
+    text-align: right;
+}
+
+.form-example {
+    margin: 50px;
+    padding: 0 30% 0 20%;
+}
+
+.form-example label, input {
+    margin: 5px;
+}
+
+input#name, #message {
+    width:50%;
+    border-radius: .5em;
+}
+
+input#message {
+    height: auto;
+    padding-bottom: 80px;
+
+}
+
+.send {
+    margin: 5px 5px 0 0;
+    padding: 5px;
+    border-radius: .5em;
+}
+
+
+footer {
+    line-height: 1.5em;
+    background-color: #5A6261;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    font-size: 2em;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer p {
+    padding-top: 20px;
+    font-size: .4em;
+}
+
+footer ul {
+    position: relative;
+    top:-.75em;
+
+}
+
+footer li {
+    line-height: 1em;
+    font-size: .6em;
+    list-style: none;
+    margin: -20px 0 30px 40% ;
+
+}
+
+footer li a {
+text-decoration: none;
+}
+
+footer a {
+    color: white;
+}
+
+.footer-form {
+    float:right;
+    position: relative;
+    top: -135px;
+    height: 100px;
+    text-align: right;
+}
+
+label#subscribe {
+    line-height: 1em;
+}
+
+input#email {
+    border-radius: 5px;
+    border-style: none;
+    border: 1px solid #6f6f6f;
+    margin-right:0;
+    padding: 0;
+}
+
+.subscribe {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: .5em;
+    border-style: none;
+    border: 1px solid #6f6f6f;
+}
